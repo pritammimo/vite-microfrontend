@@ -1,9 +1,10 @@
-import { useState } from 'react'
+
 import Button from "./Button";
 import './App.css'
+import useCount from './store';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useCount()
 
   return (
     <div className="App">
