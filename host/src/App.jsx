@@ -1,21 +1,24 @@
 
-import './App.css'
-import Button from "remoteApp/Button";
-import useStore from "remoteApp/store";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+//import Counter from "./counter";
+import Test from "./test";
+import Counter from "remoteApp/counter";
 function App() {
-  const [count, setCount] = useStore()
-
   return (
-    <div className="App">
-      <h1>Host Application</h1>
-      <Button />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </div>
-  )
+    <>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Test/>} />
+      <Route path="/Counter" element={<Counter/>}/>
+      </Routes>
+    </BrowserRouter>
+
+
+
+
+
+  </>
+  );
 }
 
-export default App
+export default App;

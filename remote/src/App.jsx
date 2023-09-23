@@ -1,22 +1,24 @@
 
-import Button from "./Button";
-import './App.css'
-import useCount from './store';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Counter from "./counter";
+import Test from "./test";
 
 function App() {
-  const [count, setCount] = useCount()
-
   return (
-    <div className="App">
-      <h1>Remote Application</h1>
-      <Button />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </div>
-  )
+    <>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Test/>} />
+      <Route path="/Counter" element={<Counter/>}/>
+      </Routes>
+    </BrowserRouter>
+
+
+
+
+
+  </>
+  );
 }
 
-export default App
+export default App;

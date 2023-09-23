@@ -11,8 +11,9 @@ export default defineConfig({
       exposes: {
         "./Button": "./src/Button",
         "./store": "./src/store",
+        "./counter":"./src/counter"
       },
-      shared: ["react", "react-dom", "jotai"],
+      shared: ["react", "react-dom", "jotai","react-router-dom"],
     }),
   ],
   build: {
