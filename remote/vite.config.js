@@ -8,10 +8,15 @@ export default defineConfig({
     federation({
       name: "remote_app",
       filename: "remoteEntry.js",
+      remotes: {
+        host: "http://localhost:5173/assets/remoteEntry.js",
+      },
       exposes: {
         "./Button": "./src/Button",
         "./store": "./src/store",
-        "./counter":"./src/counter"
+        "./counter":"./src/counter",
+        "./login":"./src/login",
+        "./loginresponse":"./src/component/getloginresponse",
       },
       shared: ["react", "react-dom", "jotai","react-router-dom"],
     }),

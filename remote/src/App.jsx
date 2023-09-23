@@ -1,14 +1,15 @@
 
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Counter from "./counter";
-import Test from "./test";
+import Login from "./login";
 
 function App() {
   return (
     <>
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Test/>} />
+      <Route path="/" element={<Navigate to="/login" replace />}  />
+      <Route path="/login" element={<Login/>} />
       <Route path="/Counter" element={<Counter/>}/>
       </Routes>
     </BrowserRouter>
