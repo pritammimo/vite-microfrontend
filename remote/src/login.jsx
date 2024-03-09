@@ -20,7 +20,8 @@ const Login = () => {
     .post("http://localhost:4000/signin", data)
     .then((response) => {
       localStorage.setItem("userdata",JSON.stringify(response.data));
-      navigate('/dashboard', { parentPath: 'host' });
+      navigate("/dashboard")
+      // navigate('/dashboard', { parentPath: 'host' });
       // Handle success - You can update the state with the response if needed
       
     })

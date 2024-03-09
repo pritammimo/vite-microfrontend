@@ -17,6 +17,7 @@ export default defineConfig({
         "./counter":"./src/counter",
         "./login":"./src/login",
         "./loginresponse":"./src/component/getloginresponse",
+        "./remotecomponent":"./src/component/Remotecomponent",
       },
       shared: ["react", "react-dom", "jotai","react-router-dom"],
     }),
