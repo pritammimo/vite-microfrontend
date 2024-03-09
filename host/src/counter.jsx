@@ -1,8 +1,8 @@
 
 
 import './App.css'
-import Button from "remoteApp/Button";
-import useStore from "remoteApp/store";
+import Button from "packagesApp/Button";
+import useStore from "packagesApp/store";
 
 function Counterhost() {
   const [count, setCount] = useStore()

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useQuery } from 'remoteApp/Queryprovider';
+import { useQuery } from 'packagesApp/Queryprovider';
 import axios from "axios";
 const Listing = () => {
     const { isLoading, data: products } = useQuery(

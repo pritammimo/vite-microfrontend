@@ -9,6 +9,7 @@ export default defineConfig({
       name: "host_app",
       remotes: {
         remoteApp: "http://localhost:5001/assets/remoteEntry.js",
+        packagesApp:"http://localhost:5002/assets/remoteEntry.js"
       },
       exposes: {
         "./dashboard":"./src/dashboard",

@@ -1,11 +1,11 @@
 
-import Button from "./Button";
-import './App.css'
-import useCount from './store';
+import './App.css';
+import Button from "packagesApp/Button";
+import useStore from "packagesApp/store";
 import { Link } from "react-router-dom";
 
 function Counter() {
-  const [count, setCount] = useCount()
+  const [count, setCount] = useStore()
   let loginResponseData = localStorage.getItem("userdata");
   console.log(loginResponseData);
   return (
@@ -17,7 +17,7 @@ function Counter() {
           count is {count}
         </button>
       </div>
-      <Link to="/test">Click now</Link>
+      <Link to="/Counter2">Click now</Link>
     </div>
   )
 }

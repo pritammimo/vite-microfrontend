@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from "axios";
-import { useQuery } from '@tanstack/react-query';
+import {useQuery} from "packagesApp/Queryprovider";
 const Productdetails = () => {
     const { isLoading, data: productDetails } = useQuery(
         {

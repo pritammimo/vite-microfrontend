@@ -6,17 +6,15 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remote_app",
+      name: "packages_app",
       filename: "remoteEntry.js",
-      remotes: {
-        host: "http://localhost:5173/assets/remoteEntry.js",
-        packagesApp:"http://localhost:5002/assets/remoteEntry.js"
-      },
+      // remotes: {
+      //   host: "http://localhost:5173/assets/remoteEntry.js",
+      // },
       exposes: {
-        "./counter":"./src/counter",
-        "./login":"./src/login",
-        "./remotecomponent":"./src/component/Remotecomponent",
-        "./productdetails":"./src/component/productdetails",
+        "./Button": "./src/Button",
+        "./store": "./src/store",
+        "./Queryprovider": "./src/QueryProvider",
       },
       shared: ["react", "react-dom", "jotai","react-router-dom","@tanstack/react-query"],
     }),
