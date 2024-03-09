@@ -14,12 +14,14 @@ export default defineConfig({
       exposes: {
         "./Button": "./src/Button",
         "./store": "./src/store",
+        "./Queryprovider": "./src/QueryProvider",
         "./counter":"./src/counter",
         "./login":"./src/login",
         "./loginresponse":"./src/component/getloginresponse",
         "./remotecomponent":"./src/component/Remotecomponent",
+        "./productdetails":"./src/component/productdetails",
       },
-      shared: ["react", "react-dom", "jotai","react-router-dom"],
+      shared: ["react", "react-dom", "jotai","react-router-dom","@tanstack/react-query"],
     }),
   ],
   build: {
