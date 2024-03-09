@@ -4,6 +4,7 @@ import Counter from "remoteApp/counter";
 import Login from "remoteApp/login";
 import Dashboard from "./dashboard";
 import Test from "./test";
+import Counterhost from "./counter";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Navigate to="/login" replace />}  />
       <Route path="/login" element={<Login/>} />
       <Route path="/Counter" element={<Counter/>}/>
+      <Route path="/Counter2" element={<Counterhost/>}/>
       <Route path="/test" element={<Test/>}/>
       <Route path="/dashboard" element={<Dashboard/>}/>
       </Routes>

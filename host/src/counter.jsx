@@ -4,7 +4,7 @@ import './App.css'
 import Button from "remoteApp/Button";
 import useStore from "remoteApp/store";
 
-function Counter() {
+function Counterhost() {
   const [count, setCount] = useStore()
 
   return (
@@ -20,4 +20,4 @@ function Counter() {
   )
 }
 
-export default Counter
+export default Counterhost
