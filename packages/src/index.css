@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+.custom-progress div {
+  background-color: #ED2028;
+  border-radius: 10px;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
