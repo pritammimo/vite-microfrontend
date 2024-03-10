@@ -1,5 +1,6 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from "path"
 import federation from "@originjs/vite-plugin-federation";
 
 export default defineConfig({
@@ -15,10 +16,16 @@ export default defineConfig({
         "./Button": "./src/Button",
         "./store": "./src/store",
         "./Queryprovider": "./src/QueryProvider",
+        "./shadcn":"./src/components/ui/index"
       },
-      shared: ["react", "react-dom", "jotai","react-router-dom","@tanstack/react-query"],
+      shared: ["react", "react-dom", "jotai","react-router-dom","@tanstack/react-query","@radix-ui/react-slot","class-variance-authority"],
     }),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   build: {
     modulePreload: false,
     target: "esnext",

@@ -18,7 +18,7 @@ export default defineConfig({
         "./remotecomponent":"./src/component/Remotecomponent",
         "./productdetails":"./src/component/productdetails",
       },
-      shared: ["react", "react-dom", "jotai","react-router-dom","@tanstack/react-query"],
+      shared: ["react", "react-dom","react-router-dom"],
     }),
   ],
   build: {

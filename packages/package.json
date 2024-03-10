@@ -11,22 +11,31 @@
     "remote": "vite build && vite preview --port 5002 --strictPort"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "@tanstack/react-query": "^5.25.0",
     "axios": "^1.5.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "jotai": "^2.0.4",
+    "lucide-react": "^0.354.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.2.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.18",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
     "vite": "^4.3.2"
   }
 }
