@@ -16,7 +16,8 @@ export default defineConfig({
         "./Button": "./src/Button",
         "./store": "./src/store",
         "./Queryprovider": "./src/QueryProvider",
-        "./shadcn":"./src/components/ui/index"
+        "./shadcn":"./src/components/ui/index",
+        "./AuthLayout":"./src/layout/AuthLayout",
       },
       shared: ["react", "react-dom", "jotai","react-router-dom","@tanstack/react-query","@radix-ui/react-slot","class-variance-authority"],
     }),
