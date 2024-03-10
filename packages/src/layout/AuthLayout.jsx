@@ -1,17 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 import AuthNavbar from "./AuthNavbar";
 import AuthFooter from "./AuthFooter";
-
+import { Button } from "../components/ui/button";
 // reactstrap components
 
 // core components
 
 
 const AuthLayout = ({children}) => {
+  const [theme, setTheme] = useState()
   return (
     <>
-       <div className="main-content" >
+       <div className={`flex flex-col gap-16 min-h-screen p-24 bg-bgPrimary ${theme}`} >
     <AuthNavbar />
+    <Button onClick={()=>setTheme("base")}>Change Color</Button>
     <div className="header bg-gradient-info py-7 py-lg-8">
         <div className="header-body text-center mb-7 text-red-700">
           <span className="text-red-700 cursor-pointer">Auth layout</span>
