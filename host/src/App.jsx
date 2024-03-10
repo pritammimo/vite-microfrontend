@@ -7,6 +7,7 @@ import Test from "./test";
 import Counterhost from "./counter";
 import Remotecomponent from "remoteApp/remotecomponent";
 import Productdetails from "remoteApp/productdetails";
+import Aboutus from "remoteApp/aboutus";
 import Listing from "./listing";
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard/>}/>
       <Route path="/productdetails" element={<Productdetails/>}/>
       <Route path="/listing" element={<Listing/>}/>
+      <Route path="/about-us" element={<Aboutus/>}/>
       </Routes>
     </BrowserRouter>
   </>

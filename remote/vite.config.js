@@ -17,6 +17,7 @@ export default defineConfig({
         "./login":"./src/login",
         "./remotecomponent":"./src/component/Remotecomponent",
         "./productdetails":"./src/component/productdetails",
+        "./aboutus":"./src/Aboutus",
       },
       shared: ["react", "react-dom","react-router-dom"],
     }),
